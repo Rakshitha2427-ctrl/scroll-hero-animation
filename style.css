@@ -1,0 +1,29 @@
+/* Reset and base styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 200vh; /* enough space to scroll */
+  font-family: Arial, sans-serif;
+}
+
+/* Hero section */
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  /* Use relative path for background image */
+  background: url("hero-bg.jpg") center/cover no-repeat fixed;
+}
+
+/* Hero content */
+.hero-content {
+  text-align: center;
+  color: white;
+  transform: translateY(0);
+  opacity: 1;
+  transition: transform 0.2s ease-out, opacity 0.2s ease-out;
+}
